@@ -1,0 +1,66 @@
+version: 2
+models:
+- name: dim_account
+  description: Dimension table for Account
+  columns:
+  - name: account_id
+    description: Primary key of the account
+    tests:
+    - not_null
+    - unique
+- name: dim_user
+  description: Dimension table for User
+  columns:
+  - name: user_id
+    description: Primary key of the user
+    tests:
+    - not_null
+    - unique
+- name: dim_product
+  description: Dimension table for Product
+  columns:
+  - name: product_id
+    description: Primary key of the product
+    tests:
+    - not_null
+    - unique
+- name: dim_lead
+  description: Dimension table for Lead
+  columns:
+  - name: lead_id
+    description: Primary key of the lead
+    tests:
+    - not_null
+    - unique
+- name: dim_campaign
+  description: Dimension table for Campaign
+  columns:
+  - name: campaign_id
+    description: Primary key of the campaign
+    tests:
+    - not_null
+    - unique
+- name: dim_recordtype
+  description: Dimension table for Recordtype
+  columns:
+  - name: record_type_id
+    description: Primary key of the recordtype
+    tests:
+    - not_null
+    - unique
+- name: dim_user_role
+  description: Dimension table for User Role
+  columns:
+  - name: user_role_id
+    description: Primary key of the user_role
+    tests:
+    - not_null
+    - unique
+- name: dim_solution
+  description: Dimension table for Solution
+  columns:
+  - name: solution_id
+    description: Primary key of the solution
+    tests:
+    - not_null
+    - unique

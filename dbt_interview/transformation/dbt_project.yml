@@ -32,6 +32,12 @@ models:
     staging:
       +schema: staging
       +materialized: view
+    dimensions:
+      +schema: salesforce_marts
+      +materialized: table
+    facts:
+      +schema: salesforce_marts
+      +materialized: table
 
 vars:
   "dbt_date:time_zone": "Europe/Berlin"
