@@ -14,7 +14,8 @@ select
     isactive,
     profileid,
     userroleid,
-    createddate
+    createddate,
+    country
 from {{ ref('stg_salesforce__user') }}
 
 )

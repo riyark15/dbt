@@ -64,3 +64,11 @@ models:
     tests:
     - not_null
     - unique
+- name: dim_date
+  description: "Date dimension with calendar features"
+  columns:
+    - name: date_id
+      description: "Primary key - the date"
+      tests:
+        - not_null
+        - unique

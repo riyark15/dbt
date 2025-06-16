@@ -21,12 +21,10 @@ models:
           - relationships:
               to: ref('dim_account')
               field: account_id
-      - name: product_id
-        description: "Foreign key to dim_product"
+      - name: stagename
         tests:
-          - relationships:
-              to: ref('dim_product')
-              field: product_id
+          - accepted_values:
+              values: ['Negotiation/Review','Qualification','Id. Decision Makers','Prospecting','Perception Analysis','Closed Won','Value Proposition','Proposal/Price Quote','Needs Analysis']
 
   - name: fct_top_sales_rep
     description: "Shows the sales rep with the most converted deals"
